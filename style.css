@@ -1,0 +1,114 @@
+/* Základní nastavení */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #243024;
+    background-color: #f4f7f1;
+}
+
+/* Hlavička stránky */
+header {
+    background-color: #174d32;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+/* Navigace */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #246b43;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hlavní obsah */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #174d32;
+}
+
+/* Karty s vybavením */
+.karty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px #00000015;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Zvýrazněný tip */
+.tip {
+    background-color: #e0efd9;
+    padding: 15px;
+    border-left: 5px solid #39834c;
+    border-radius: 5px;
+}
+
+/* Patička stránky */
+footer {
+    background-color: #174d32;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responzivní design pro větší obrazovky */
+@media (min-width: 768px) {
+    main {
+        padding: 25px;
+    }
+
+    .card {
+        flex: 1 1 280px;
+    }
+
+    header {
+        padding: 40px 20px;
+    }
+}
